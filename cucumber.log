@@ -1,0 +1,184 @@
+I, [2009-07-09T15:49:25.858932 #25654]  INFO -- : db_delete(test_db_a):
+I, [2009-07-09T15:49:25.861703 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:25.861739 #25654]  INFO -- : db_create(test_db_a):
+I, [2009-07-09T15:49:25.879604 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:25.879664 #25654]  INFO -- : db_delete(test_db_b):
+I, [2009-07-09T15:49:25.881074 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:25.881106 #25654]  INFO -- : db_create(test_db_b):
+I, [2009-07-09T15:49:25.905345 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:25.906118 #25654]  INFO -- : db_put_doc(test_db_a, foo1, {"_id":"foo1","name":"mine"}):
+I, [2009-07-09T15:49:25.909772 #25654]  INFO -- : {"ok":true,"id":"foo1","rev":"1-158999266"}
+
+I, [2009-07-09T15:49:25.911167 #25654]  INFO -- : db_replication(test_db_a, test_db_b):
+I, [2009-07-09T15:49:25.953182 #25654]  INFO -- : {"ok":true,"session_id":"8bfe2a204f29c5398605f5b881c264b1","source_last_seq":1,"history":[{"start_time":"Thu, 09 Jul 2009 19:49:25 GMT","end_time":"Thu, 09 Jul 2009 19:49:25 GMT","start_last_seq":0,"end_last_seq":1,"missing_checked":1,"missing_found":1,"docs_read":1,"docs_written":1,"doc_write_failures":0}]}
+
+I, [2009-07-09T15:49:25.954770 #25654]  INFO -- : db_get_doc(test_db_b, foo1)
+I, [2009-07-09T15:49:25.956154 #25654]  INFO -- : {"_id":"foo1","_rev":"1-158999266","name":"mine"}
+
+I, [2009-07-09T15:49:25.956188 #25654]  INFO -- : db_get_doc(test_db_b, foo1)
+I, [2009-07-09T15:49:25.957483 #25654]  INFO -- : {"_id":"foo1","_rev":"1-158999266","name":"mine"}
+
+I, [2009-07-09T15:49:25.957765 #25654]  INFO -- : db_get_doc(test_db_a, foo1)
+I, [2009-07-09T15:49:25.958967 #25654]  INFO -- : {"_id":"foo1","_rev":"1-158999266","name":"mine"}
+
+I, [2009-07-09T15:49:25.959190 #25654]  INFO -- : db_delete_doc(test_db_a, foo1)
+I, [2009-07-09T15:49:25.962300 #25654]  INFO -- : {"ok":true,"id":"foo1","rev":"2-935469184"}
+
+I, [2009-07-09T15:49:25.962562 #25654]  INFO -- : db_replication(test_db_a, test_db_b):
+I, [2009-07-09T15:49:25.971016 #25654]  INFO -- : {"ok":true,"session_id":"1d116153c4a9fb1621209ea3250730aa","source_last_seq":2,"history":[{"start_time":"Thu, 09 Jul 2009 19:49:25 GMT","end_time":"Thu, 09 Jul 2009 19:49:25 GMT","start_last_seq":1,"end_last_seq":2,"missing_checked":1,"missing_found":1,"docs_read":1,"docs_written":1,"doc_write_failures":0},{"start_time":"Thu, 09 Jul 2009 19:49:25 GMT","end_time":"Thu, 09 Jul 2009 19:49:25 GMT","start_last_seq":0,"end_last_seq":1,"missing_checked":1,"missing_found":1,"docs_read":1,"docs_written":1,"doc_write_failures":0}]}
+
+I, [2009-07-09T15:49:25.971378 #25654]  INFO -- : db_get_doc(test_db_b, foo1)
+I, [2009-07-09T15:49:25.973213 #25654]  INFO -- : db_delete(test_db_a):
+I, [2009-07-09T15:49:25.974631 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:25.974665 #25654]  INFO -- : db_create(test_db_a):
+I, [2009-07-09T15:49:26.007266 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.007333 #25654]  INFO -- : db_delete(test_db_b):
+I, [2009-07-09T15:49:26.009543 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.009606 #25654]  INFO -- : db_create(test_db_b):
+I, [2009-07-09T15:49:26.015642 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.015879 #25654]  INFO -- : db_put_doc(test_db_a, foo1, {"_id":"foo1","value":"a"}):
+I, [2009-07-09T15:49:26.018777 #25654]  INFO -- : {"ok":true,"id":"foo1","rev":"1-2331778140"}
+
+I, [2009-07-09T15:49:26.019615 #25654]  INFO -- : db_get_doc(test_db_a, foo1)
+I, [2009-07-09T15:49:26.020911 #25654]  INFO -- : {"_id":"foo1","_rev":"1-2331778140","value":"a"}
+
+I, [2009-07-09T15:49:26.020959 #25654]  INFO -- : db_delete_doc(test_db_a, foo1)
+I, [2009-07-09T15:49:26.023550 #25654]  INFO -- : {"ok":true,"id":"foo1","rev":"2-521259910"}
+
+I, [2009-07-09T15:49:26.023836 #25654]  INFO -- : db_replication(test_db_a, test_db_b):
+I, [2009-07-09T15:49:26.036276 #25654]  INFO -- : {"ok":true,"session_id":"d569241e88d8b14c7af8550e5daca554","source_last_seq":2,"history":[{"start_time":"Thu, 09 Jul 2009 19:49:26 GMT","end_time":"Thu, 09 Jul 2009 19:49:26 GMT","start_last_seq":0,"end_last_seq":2,"missing_checked":1,"missing_found":1,"docs_read":1,"docs_written":1,"doc_write_failures":0}]}
+
+I, [2009-07-09T15:49:26.036626 #25654]  INFO -- : db_get_all_docs_by_sequence(test_db_b)
+I, [2009-07-09T15:49:26.038076 #25654]  INFO -- : {"total_rows":0,"offset":0,"rows":[
+{"id":"foo1","key":1,"value":{"rev":"2-521259910","deleted":true}}
+]}
+
+I, [2009-07-09T15:49:26.038632 #25654]  INFO -- : db_delete(test_db_a):
+I, [2009-07-09T15:49:26.040069 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.040102 #25654]  INFO -- : db_create(test_db_a):
+I, [2009-07-09T15:49:26.066977 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.067037 #25654]  INFO -- : db_delete(test_db_b):
+I, [2009-07-09T15:49:26.068577 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.068610 #25654]  INFO -- : db_create(test_db_b):
+I, [2009-07-09T15:49:26.074817 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.075058 #25654]  INFO -- : db_put_doc(test_db_a, abc/def, {"_id":"abc\/def","val":"one"}):
+I, [2009-07-09T15:49:26.077750 #25654]  INFO -- : {"ok":true,"id":"abc","rev":"1-44989429"}
+
+I, [2009-07-09T15:49:26.078537 #25654]  INFO -- : db_replication(test_db_a, test_db_b):
+I, [2009-07-09T15:49:26.110652 #25654]  INFO -- : {"ok":true,"session_id":"ff6a10fd1de49dce745485e0193db626","source_last_seq":1,"history":[{"start_time":"Thu, 09 Jul 2009 19:49:26 GMT","end_time":"Thu, 09 Jul 2009 19:49:26 GMT","start_last_seq":0,"end_last_seq":1,"missing_checked":1,"missing_found":1,"docs_read":1,"docs_written":1,"doc_write_failures":0}]}
+
+I, [2009-07-09T15:49:26.111054 #25654]  INFO -- : db_get_doc(test_db_b, abc/def)
+I, [2009-07-09T15:49:26.112469 #25654]  INFO -- : {"_id":"abc\/def","val":"one"}
+I, [2009-07-09T15:49:26.112502 #25654]  INFO -- : db_get_doc(test_db_b, abc/def)
+I, [2009-07-09T15:49:26.136688 #25654]  INFO -- : {"_id":"abc\/def","val":"one"}
+I, [2009-07-09T15:49:26.137485 #25654]  INFO -- : db_delete(test_db_a):
+I, [2009-07-09T15:49:26.139104 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.139137 #25654]  INFO -- : db_create(test_db_a):
+I, [2009-07-09T15:49:26.165908 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.165996 #25654]  INFO -- : db_delete(test_db_b):
+I, [2009-07-09T15:49:26.167855 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.167890 #25654]  INFO -- : db_create(test_db_b):
+I, [2009-07-09T15:49:26.174192 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.175086 #25654]  INFO -- : db_put_doc(test_db_a, _design/test, {"_id":"_design\/test"}):
+I, [2009-07-09T15:49:26.177929 #25654]  INFO -- : {"ok":true,"id":"_design/test","rev":"1-2785353892"}
+
+I, [2009-07-09T15:49:26.178570 #25654]  INFO -- : db_replication(test_db_a, test_db_b):
+I, [2009-07-09T15:49:26.191050 #25654]  INFO -- : {"ok":true,"session_id":"589ab392726cb70c575bd299d586e9d2","source_last_seq":1,"history":[{"start_time":"Thu, 09 Jul 2009 19:49:26 GMT","end_time":"Thu, 09 Jul 2009 19:49:26 GMT","start_last_seq":0,"end_last_seq":1,"missing_checked":1,"missing_found":1,"docs_read":1,"docs_written":1,"doc_write_failures":0}]}
+
+I, [2009-07-09T15:49:26.191396 #25654]  INFO -- : db_get_doc(test_db_b, _design/test)
+I, [2009-07-09T15:49:26.192912 #25654]  INFO -- : {"_id":"_design/test","_rev":"1-2785353892"}
+
+I, [2009-07-09T15:49:26.192945 #25654]  INFO -- : db_get_doc(test_db_b, _design/test)
+I, [2009-07-09T15:49:26.194229 #25654]  INFO -- : {"_id":"_design/test","_rev":"1-2785353892"}
+
+I, [2009-07-09T15:49:26.194808 #25654]  INFO -- : db_delete(test_db_a):
+I, [2009-07-09T15:49:26.196381 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.196413 #25654]  INFO -- : db_create(test_db_a):
+I, [2009-07-09T15:49:26.199809 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.199853 #25654]  INFO -- : db_delete(test_db_b):
+I, [2009-07-09T15:49:26.201115 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.201146 #25654]  INFO -- : db_create(test_db_b):
+I, [2009-07-09T15:49:26.229225 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.232793 #25654]  INFO -- : db_put_doc(test_db_a, bin_doc, {"_id":"bin_doc","_attachments":{"foobar.txt":{"type":"base64","data":"VGhpcyBpcyBhIGJhc2U2NCBlbmNvZGVkIHRleHQ="}}}):
+I, [2009-07-09T15:49:26.236031 #25654]  INFO -- : {"ok":true,"id":"bin_doc","rev":"1-1327425112"}
+
+I, [2009-07-09T15:49:26.236318 #25654]  INFO -- : db_put_doc(test_db_b, _design/with_bin, {"_id":"_design\/with_bin","_attachments":{"foobar.txt":{"type":"base64","data":"VGhpcyBpcyBhIGJhc2U2NCBlbmNvZGVkIHRleHQ="}}}):
+I, [2009-07-09T15:49:26.238999 #25654]  INFO -- : {"ok":true,"id":"_design/with_bin","rev":"1-3022885263"}
+
+I, [2009-07-09T15:49:26.239240 #25654]  INFO -- : db_replication(test_db_a, test_db_b):
+I, [2009-07-09T15:49:26.284706 #25654]  INFO -- : {"ok":true,"session_id":"c5023fbe4a6daf4a58380f05cb612b93","source_last_seq":1,"history":[{"start_time":"Thu, 09 Jul 2009 19:49:26 GMT","end_time":"Thu, 09 Jul 2009 19:49:26 GMT","start_last_seq":0,"end_last_seq":1,"missing_checked":1,"missing_found":1,"docs_read":1,"docs_written":1,"doc_write_failures":0}]}
+
+I, [2009-07-09T15:49:26.285232 #25654]  INFO -- : db_get_doc(test_db_b, bin_doc)
+I, [2009-07-09T15:49:26.287549 #25654]  INFO -- : {"_id":"bin_doc","_rev":"1-1327425112","_attachments":{"foobar.txt":{"stub":true,"content_type":"application/octet-stream","length":29}}}
+
+I, [2009-07-09T15:49:26.287584 #25654]  INFO -- : db_get_doc(test_db_b, bin_doc)
+I, [2009-07-09T15:49:26.288896 #25654]  INFO -- : {"_id":"bin_doc","_rev":"1-1327425112","_attachments":{"foobar.txt":{"stub":true,"content_type":"application/octet-stream","length":29}}}
+
+I, [2009-07-09T15:49:26.289187 #25654]  INFO -- : db_get_doc(test_db_b, _design/with_bin)
+I, [2009-07-09T15:49:26.290437 #25654]  INFO -- : {"_id":"_design/with_bin","_rev":"1-3022885263","_attachments":{"foobar.txt":{"stub":true,"content_type":"application/octet-stream","length":29}}}
+
+I, [2009-07-09T15:49:26.290470 #25654]  INFO -- : db_get_doc(test_db_b, _design/with_bin)
+I, [2009-07-09T15:49:26.291727 #25654]  INFO -- : {"_id":"_design/with_bin","_rev":"1-3022885263","_attachments":{"foobar.txt":{"stub":true,"content_type":"application/octet-stream","length":29}}}
+
+I, [2009-07-09T15:49:26.292328 #25654]  INFO -- : db_delete(test_db_a):
+I, [2009-07-09T15:49:26.296893 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.296931 #25654]  INFO -- : db_create(test_db_a):
+I, [2009-07-09T15:49:26.300794 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.300843 #25654]  INFO -- : db_delete(test_db_b):
+I, [2009-07-09T15:49:26.302172 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.302208 #25654]  INFO -- : db_create(test_db_b):
+I, [2009-07-09T15:49:26.305625 #25654]  INFO -- : {"ok":true}
+
+I, [2009-07-09T15:49:26.305833 #25654]  INFO -- : db_put_doc(test_db_a, foo, {"_id":"foo","value":"a"}):
+I, [2009-07-09T15:49:26.329710 #25654]  INFO -- : {"ok":true,"id":"foo","rev":"1-451642943"}
+
+I, [2009-07-09T15:49:26.330745 #25654]  INFO -- : db_put_doc(test_db_b, foo, {"_id":"foo","value":"b"}):
+I, [2009-07-09T15:49:26.333611 #25654]  INFO -- : {"ok":true,"id":"foo","rev":"1-886098835"}
+
+I, [2009-07-09T15:49:26.334379 #25654]  INFO -- : db_replication(test_db_b, test_db_a):
+I, [2009-07-09T15:49:26.344893 #25654]  INFO -- : {"ok":true,"session_id":"a26ff82c72b31b2f1ea4db881c8bdec9","source_last_seq":1,"history":[{"start_time":"Thu, 09 Jul 2009 19:49:26 GMT","end_time":"Thu, 09 Jul 2009 19:49:26 GMT","start_last_seq":0,"end_last_seq":1,"missing_checked":1,"missing_found":1,"docs_read":1,"docs_written":1,"doc_write_failures":0}]}
+
+I, [2009-07-09T15:49:26.366598 #25654]  INFO -- : db_get_doc(test_db_a, foo)
+I, [2009-07-09T15:49:26.370465 #25654]  INFO -- : {"_id":"foo","_rev":"1-886098835","value":"b","_conflicts":["1-451642943"]}
+
+I, [2009-07-09T15:49:26.371054 #25654]  INFO -- : db_get_doc(test_db_b, foo)
+I, [2009-07-09T15:49:26.372338 #25654]  INFO -- : {"_id":"foo","_rev":"1-886098835","value":"b"}
+
+I, [2009-07-09T15:49:26.372813 #25654]  INFO -- : db_get_doc(test_db_a, foo)
+I, [2009-07-09T15:49:26.374231 #25654]  INFO -- : {"_id":"foo","_rev":"1-886098835","value":"b"}
+
+I, [2009-07-09T15:49:26.374276 #25654]  INFO -- : db_delete_doc(test_db_a, foo)
+I, [2009-07-09T15:49:26.401083 #25654]  INFO -- : {"ok":true,"id":"foo","rev":"2-2080107814"}
+
+I, [2009-07-09T15:49:26.401506 #25654]  INFO -- : db_replication(test_db_b, test_db_a):
+I, [2009-07-09T15:49:26.404087 #25654]  INFO -- : {"ok":true,"no_changes":true,"session_id":"a26ff82c72b31b2f1ea4db881c8bdec9","source_last_seq":1,"history":[{"start_time":"Thu, 09 Jul 2009 19:49:26 GMT","end_time":"Thu, 09 Jul 2009 19:49:26 GMT","start_last_seq":0,"end_last_seq":1,"missing_checked":1,"missing_found":1,"docs_read":1,"docs_written":1,"doc_write_failures":0}]}
+
+I, [2009-07-09T15:49:26.404352 #25654]  INFO -- : db_get_doc(test_db_a, foo)
+I, [2009-07-09T15:49:26.405673 #25654]  INFO -- : {"_id":"foo","_rev":"1-451642943","value":"a"}
+
+I, [2009-07-09T15:49:26.405998 #25654]  INFO -- : db_get_doc(test_db_b, foo)
+I, [2009-07-09T15:49:26.431275 #25654]  INFO -- : {"_id":"foo","_rev":"1-886098835","value":"b"}
+

@@ -8,5 +8,5 @@ require 'logger'
 COUCH_SERVER = 'http://127.0.0.1:5984'
 
 # set up a default logger
-LOGGER = Logger.new('features/cucumber.log')
+LOGGER = Logger.new('cucumber.log')
 LOGGING = true # make false to turn it off
